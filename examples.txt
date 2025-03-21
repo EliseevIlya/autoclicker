@@ -1,0 +1,125 @@
+    """"
+        hwnd = 198090
+    actions = [
+        # Клик по координатам внутри приложения (относительно клиентской области окна)
+        {
+            'type': 'coordinate',
+            'x': 310,
+            'y': 231,
+            'hwnd': hwnd,
+            'delay': 1.5
+        },
+        {
+            'type': 'coordinate',
+            'x': 310,
+            'y': 231,
+            'hwnd': hwnd,
+            'delay': 1.5
+        },
+        {
+            'type': 'image',
+            'template_path': 'loop.png',
+            'hwnd': hwnd,
+            'threshold': 0.8,
+            'delay': 1.5
+        },
+        {
+            'type': 'image',
+            'template_path': 'search.png',
+            'hwnd': hwnd,
+            'threshold': 0.8,
+            'delay': 1.5
+        },
+        {
+            'type': 'image',
+            'template_path': 'attackEU.png',
+            'hwnd': hwnd,
+            'threshold': 0.8,
+            'delay': 1.5
+        },
+        {
+            'type': 'image',
+            'template_path': 'select.png',
+            'hwnd': hwnd,
+            'threshold': 0.8,
+            'delay': 1.5
+        },
+        {
+            'type': 'image',
+            'template_path': 'marche.png',
+            'hwnd': hwnd,
+            'threshold': 0.8,
+            'delay': 1.5
+        },
+        {
+            'type': 'coordinate',
+            'x': 350,
+            'y': 531,
+            'delay': 1.5
+        }
+    ]
+    i = 1
+    sleep = 50
+    try:
+        while True:
+            run_click_sequence(actions)
+            print("Завершена последовательность", i, ", ждём", sleep, "  секунд перед следующим циклом")
+            i = i + 1
+            time.sleep(sleep)
+    except Exception as e:
+        print(e)
+        #os.system("shutdown /s /f /t 0")
+    """
+
+    """"
+    actions = [
+        # Клик по координатам внутри приложения (относительно клиентской области окна)
+        {
+            'type': 'coordinate',
+            'x': 627,
+            'y': 806,
+            #'hwnd': 198090,  # клик отправится в это окно
+            'delay': 1.5
+        },
+        {
+            'type': 'coordinate',
+            'x': 866,
+            'y': 965,
+            #'hwnd': 198090,  # клик отправится в это окно
+            'delay': 1.5
+        },
+        # Поиск и клик по изображению внутри окна
+        {
+            'type': 'image',
+            'template_path': 'button.png',
+            #'hwnd': 198090,
+            # 'region': (50, 50, 400, 300),  # если нужно ограничить область поиска
+            'threshold': 0.8,
+            'delay': 2
+        },
+        # Ещё один клик по координатам внутри окна
+        {
+            'type': 'coordinate',
+            'x': 1075,
+            'y': 958,
+            #'hwnd': 198090,
+            'delay': 1.5
+        },
+        {
+            'type': 'coordinate',
+            'x': 778,
+            'y': 938,
+            #'hwnd': 198090,
+            'delay': 1.5
+        }
+    ]
+    """
+
+    """"
+            {
+                'type': 'coordinate',
+                'x': 350,
+                'y': 531,
+                'delay': 1.5
+            }
+            """

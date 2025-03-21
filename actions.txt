@@ -1,0 +1,13 @@
+{
+    "actions": [
+        {
+            "type": "coordinate",
+            "x": 593,
+            "y": 962,
+            "delay": 3.0
+        }
+    ],
+    "operations_count": 3,
+    "infinite": false,
+    "sleep_time": 3
+}
